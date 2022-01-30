@@ -30,6 +30,9 @@
     .header_profile_area ul li:nth-child(3){
         display: block;
     }
+    .left_section{
+        display: none;
+    }
 }
 @media(max-width: 992px){
     .menu_toggler{
@@ -43,6 +46,9 @@
         color: #e4e6eb;
     }
     .header_nav_area{
+        display: none;
+    }
+    .right_section{
         display: none;
     }
 }
