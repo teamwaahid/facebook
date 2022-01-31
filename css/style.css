@@ -370,7 +370,7 @@ main{
 }
 
 /* Sponsor Section */
-.sponsor_section{}
+
 .sponsor_title{
     color: #b0b3b8;
     font-weight: 600;
@@ -407,7 +407,7 @@ main{
 }
 
 /* Contact Section */
-.contact_section{}
+
 .contact_top{
     justify-content: space-between;
     margin-bottom: 25px;
@@ -417,8 +417,6 @@ main{
     font-size: 16px;
     font-weight: 600;
 }
-.contact_ul{}
-.contact_ul li{}
 .contact_ul li a{
     display: flex;
     align-items: center;
@@ -433,9 +431,7 @@ main{
 }
 
 /* Active Contact Section */
-.active_contacts{}
-.active_contacts ul{}
-.active_contacts ul li{}
+
 .active_contacts ul li a{
     color: #e4e6eb;
     padding: 5px;
@@ -469,6 +465,7 @@ main{
     object-fit: cover;
 }
 
+/* Group Section */
 .group_title{
     color: #b0b3b8;
     font-size: 16px;
