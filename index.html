@@ -1,318 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook | Wahid Hasan</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Header Section Start -->
     <header class="display_flex">
-        <div class="header_search_area display_flex">
-            <div class="logo">
-                <a href="#"><img src="./image/logo.png" alt=""></a>
-            </div>
-            <div class="search display_flex">
-                <span class="material-icons-outlined">
-                    search
-                </span>
-                <input type="search" name="" id="" placeholder="Search Facebook">
-            </div>
-            <div class="menu_toggler"><a data-tag="Menu" href="#"><span class="material-icons-outlined">menu</span></a></div>
+      <div class="header_search_area display_flex">
+        <div class="logo">
+          <a href="#"><img src="./image/logo.png" alt="" /></a>
         </div>
-        <nav class="header_nav_area">
-            <ul class="display_flex">
-                <li><a data-tag="Home" href="#"><span class="material-icons-outlined">home</span></a></li>
-                <li><a data-tag="Friends" href="#"><span class="material-icons-outlined">people_alt</span></a></li>
-                <li><a data-tag="Pages" href="#"><span class="material-icons-outlined">flag</span></a></li>
-                <li><a data-tag="Watch" href="#"><span class="material-icons-outlined">ondemand_video</span></a></li>
-                <li><a data-tag="Groups" href="#"><span class="material-icons-outlined">groups</span></a></li>
-                <li><a data-tag="Menu" href="#"><span class="material-icons-outlined">menu</span></a></li>
-            </ul>
-        </nav>
-        <div class="header_profile_area">
-            <ul class="display_flex">
-                <li><a href="#">
-                    <img src="./image/profile-img.jpg" alt="">
-                    <p>program...</p>
-                </a></li>
-                <li><a href="#"><span class="material-icons-outlined">
-                    apps
-                    </span></a></li>
-                <li><a href="#"><span class="material-icons-outlined">
-                    add
-                    </span></a></li>
-                <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                <li><a href="#"><span class="material-icons-outlined">
-                    notifications
-                    </span></a></li>
-                <li><a href="#"><span class="material-icons-outlined">
-                    arrow_drop_down
-                    </span></a></li>
-            </ul>
+        <div class="search display_flex">
+          <span class="material-icons-outlined"> search </span>
+          <input type="search" name="" id="" placeholder="Search Facebook" />
         </div>
+        <div class="menu_toggler">
+          <a data-tag="Menu" href="#"
+            ><span class="material-icons-outlined">menu</span></a
+          >
+        </div>
+      </div>
+
+      <nav class="header_nav_area">
+        <ul class="display_flex">
+          <li data-tag="Home">
+            <a href="#"><span class="material-icons-outlined">home</span></a>
+          </li>
+          <li data-tag="Friends">
+            <a href="#" data-notify="1"
+              ><span class="material-icons-outlined">people_alt</span></a
+            >
+          </li>
+          <li data-tag="Pages">
+            <a href="#"><span class="material-icons-outlined">flag</span></a>
+          </li>
+          <li data-tag="Watch">
+            <a href="#" data-notify="9+"
+              ><span class="material-icons-outlined">ondemand_video</span></a
+            >
+          </li>
+          <li data-tag="Groups">
+            <a href="#" data-notify="10"
+              ><span class="material-icons-outlined">groups</span></a
+            >
+          </li>
+          <li data-tag="Menu">
+            <a href="#"><span class="material-icons-outlined">menu</span></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header_profile_area">
+        <ul class="display_flex">
+          <li>
+            <a href="#">
+              <img src="./image/profile-img.jpg" alt="" />
+              <p>program...</p>
+            </a>
+          </li>
+          <li data-tag="Menu">
+            <a href="#"><span class="material-icons-outlined"> apps </span></a>
+          </li>
+          <li>
+            <a href="#"><span class="material-icons-outlined"> add </span></a>
+          </li>
+          <li data-tag="Messenger">
+            <a href="#" data-notify="4+"
+              ><i class="fab fa-facebook-messenger"></i
+            ></a>
+          </li>
+          <li data-tag="Notifications">
+            <a href="#" data-notify="10"
+              ><span class="material-icons-outlined"> notifications </span></a
+            >
+          </li>
+          <li data-tag="Account">
+            <a href="#"
+              ><span class="material-icons-outlined"> arrow_drop_down </span></a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Header Section End -->
 
     <!-- Main Section Start -->
     <main class="display_flex">
-        <aside class="left_section">
-            <!-- Profile Section -->
-            <ul>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/profile-img.jpg" alt="">
-                    Programmer Wahid
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/left-1.png" alt="">
-                    Find Friends
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/left-2.png" alt="">
-                    Groups
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/left-3.png" alt="">
-                    Pages
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/left-4.png" alt="">
-                    Community Help
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <img src="./image/left-5.png" alt="">
-                    Marketplace
-                </a></li>
-                <li><a href="#" class="display_flex body_hover">
-                    <span class="material-icons-outlined">
-                        keyboard_arrow_down
-                        </span>
-                    See more
-                </a></li>
+      <!-- Left Section Start -->
+
+      <aside class="left_section">
+        <!-- Profile Section -->
+        <ul>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/profile-img.jpg" alt="" />
+              Programmer Wahid
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/left-1.png" alt="" />
+              Find Friends
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/left-2.png" alt="" />
+              Groups
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/left-3.png" alt="" />
+              Pages
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/left-4.png" alt="" />
+              Community Help
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <img src="./image/left-5.png" alt="" />
+              Marketplace
+            </a>
+          </li>
+          <li>
+            <a href="#" class="display_flex body_hover">
+              <span class="material-icons-outlined"> keyboard_arrow_down </span>
+              See more
+            </a>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <!-- Shortcut Section -->
+        <div class="shortcut_section">
+          <div class="shortcut_header display_flex">
+            <h4>Your Shortcut</h4>
+            <button class="body_menu_btn">Edit</button>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="display_flex body_hover">
+                <img src="./image/shortcut-1.jpg" alt="" />
+                Complete Web Development: Batch 4
+              </a>
+            </li>
+            <li>
+              <a href="#" class="display_flex body_hover">
+                <img src="./image/shortcut-2.png" alt="" />
+                SCIC: Job Hunting Battlefield (Batch 4)
+              </a>
+            </li>
+            <li>
+              <a href="#" class="display_flex body_hover">
+                <img src="./image/shortcut-3.jpg" alt="" />
+                Talk js
+              </a>
+            </li>
+            <li>
+              <a href="#" class="display_flex body_hover">
+                <img src="./image/shortcut-4.jpg" alt="" />
+                Coding Club Bangladesh - Programming Community
+              </a>
+            </li>
+            <li>
+              <a href="#" class="display_flex body_hover">
+                <img src="./image/shortcut-5.jpg" alt="" />
+                Stack Learner - Programming Community
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Left Footer -->
+        <div class="footer_section">
+          <footer>
+            <ul class="footer_ul display_flex">
+              <li><a class="footer_link" href="#">Privacy</a> .</li>
+              <li><a class="footer_link" href="#">Terms</a> .</li>
+              <li><a class="footer_link" href="#">Advertising</a> .</li>
+              <li>
+                <a class="footer_link" href="#"
+                  >Ad choise
+                  <span id="adchoise" class="material-icons-outlined">
+                    play_arrow
+                  </span></a
+                >.
+              </li>
+              <li><a class="footer_link" href="#">Cookies</a> .</li>
+              <li><a href="#">More .</a></li>
+              Meta © 2022
             </ul>
+          </footer>
+        </div>
+      </aside>
+
+      <!-- Middle Section Start -->
+
+      <div class="middle_section">
+        <!-- Story Section -->
+        <div class="story_container">
+          <div class="story_box create_story">
+            <img src="./image/create-story.jpg" alt="" />
+            <div class="create_story_content">
+              <h6>Create Story</h6>
+              <div class="create_story_btn">
+                <span class="material-icons-outlined"> add </span>
+              </div>
+            </div>
+          </div>
+          <div class="story_box">
+            <img src="./image/other-story-1.jpg" alt="" />
+            <h4 class="other_story_name">Sharafat Shovon</h4>
+            <div class="other_story_avatar">
+              <img src="./image/contact-6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="story_box">
+            <img src="./image/other-story-2.jpg" alt="" />
+            <h4 class="other_story_name">Imran Hossain</h4>
+            <div class="other_story_avatar">
+              <img src="./image/contact-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="story_box">
+            <img src="./image/other-story-3.jpg" alt="" />
+            <h4 class="other_story_name">Mehedi H Mahmud</h4>
+            <div class="other_story_avatar">
+              <img src="./image/contact-8.jpg" alt="" />
+            </div>
+          </div>
+          <div class="story_box">
+            <img src="./image/other-story-4.jpg" alt="" />
+            <h4 class="other_story_name">Ashraf Faruqee Zaman</h4>
+            <div class="other_story_avatar">
+              <img src="./image/contact-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="more_story">
+            <span class="material-icons-outlined"> east </span>
+          </div>
+        </div>
+
+        <!-- Create Status Section -->
+        <div class="create_status">
+          <div class="create_status_top">
+            <div class="profile_img">
+              <img src="./image/profile-img.jpg" alt="" />
+            </div>
+            <input type="text" placeholder="What's on your mind, Programmer?" />
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="create_status_bottom">
+            <ul>
+              <li>
+                <span class="material-icons-outlined"> video_call </span>
+                Live video
+              </li>
+              <li>
+                <span class="material-icons-outlined"> photo_library </span
+                >Photo/video
+              </li>
+              <li>
+                <span class="material-icons-outlined"> emoji_emotions </span
+                >Feeling/activity
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Create Room Section -->
+        <div class="create_room">
+          <button>
+            <img src="./image/create-room.png" alt="" />Create room
+          </button>
+          <ul>
+            <li><img src="./image/contact-1.jpg" alt="" /></li>
+            <li><img src="./image/contact-2.jpg" alt="" /></li>
+            <li><img src="./image/contact-3.jpg" alt="" /></li>
+            <li><img src="./image/contact-4.jpg" alt="" /></li>
+            <li><img src="./image/contact-5.jpg" alt="" /></li>
+            <li><img src="./image/contact-6.jpg" alt="" /></li>
+          </ul>
+          <div class="more_room_btn">
+            <span class="material-icons-outlined"> chevron_right </span>
+          </div>
+        </div>
+
+        <!-- Posts Section -->
+        <div class="posts">
+          <div class="post_title">
+            <div class="post_icon">
+              <img src="./image/english_page.jpg" />
+            </div>
+            <div class="post_about">
+              <p>
+                <a href="">The Proficient English Page</a>
+              </p>
+              <div class="post_date">
+                <small>Yesterday at 6.28 PM · </small>
+                <div class="post_share_with">
+                  <span class="material-icons-outlined"> public </span>
+                </div>
+              </div>
+            </div>
+            <div class="post_options">
+              <span class="material-icons-outlined"> more_horiz </span>
+            </div>
+          </div>
+          <div class="post_article">
+            <p>REAL JOY IS IN HELPING OTHER BEST FILM</p>
+            <p>
+              <a href="">https://youtu.be/klNM-KslbE0</a>
+            </p>
+          </div>
+          <div class="post_content">
+            <img src="./image/post1.jpg" alt="" />
+          </div>
+          <div class="post_bottom">
+            <div class="reactions">
+              <div class="likes">
+                <div>
+                  <img src="./image/like.png" alt="" />
+                  <img src="./image/love.png" alt="" />
+                </div>
+                35K
+              </div>
+              <div class="comment_share">
+                <a href="">3K Comments</a>
+                <a href="">1.4K Shares</a>
+              </div>
+            </div>
 
             <div class="separator"></div>
 
-            <!-- Shortcut Section -->
-            <div class="shortcut_section">
-                <div class="shortcut_header display_flex">
-                    <h4>Your Shortcut</h4>
-                    <button class="body_menu_btn">Edit</button>
-                </div>
-                <ul>
-                    <li><a href="#" class="display_flex body_hover">
-                        <img src="./image/shortcut-1.jpg" alt="">
-                        Complete Web Development: Batch 4
-                    </a></li>
-                    <li><a href="#" class="display_flex body_hover">
-                        <img src="./image/shortcut-2.png" alt="">
-                        SCIC: Job Hunting Battlefield (Batch 4)
-                    </a></li>
-                    <li><a href="#" class="display_flex body_hover">
-                        <img src="./image/shortcut-3.jpg" alt="">
-                        Talk js
-                    </a></li>
-                    <li><a href="#" class="display_flex body_hover">
-                        <img src="./image/shortcut-4.jpg" alt="">
-                        Coding Club Bangladesh - Programming Community
-                    </a></li>
-                    <li><a href="#" class="display_flex body_hover">
-                        <img src="./image/shortcut-5.jpg" alt="">
-                        Stack Learner - Programming Community
-                    </a></li>
-                </ul>
+            <div class="post_actions">
+              <ul>
+                <li><img src="./image/like_box.png" alt="" />Like</li>
+                <li><img src="./image/comment_box.png" alt="" />Comment</li>
+                <li><img src="./image/share_box.png" alt="" />Share</li>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- Left Footer -->
-            <div class="footer_section">
-                <footer>
-                    <ul class="footer_ul display_flex">
-                        <li><a class="footer_link" href="#">Privacy</a> .</li>
-                        <li><a class="footer_link" href="#">Terms</a> .</li>
-                        <li><a class="footer_link" href="#">Advertising</a> .</li>
-                        <li><a class="footer_link" href="#">Ad choise <span id="adchoise" class="material-icons-outlined">
-                            play_arrow
-                            </span></a>.</li>
-                        <li><a class="footer_link" href="#">Cookies</a> .</li>
-                        <li><a href="#">More .</a></li>
-                        Meta © 2022
-                    </ul>
-                </footer>
+      <!-- Right Section Start -->
+
+      <aside class="right_section">
+        <!-- Birthday Section -->
+        <div class="birthday_section">
+          <div class="birthday_header display_flex">
+            <h4 class="display_flex">
+              <img src="./image/birthday.png" alt="" /> Birthdays
+            </h4>
+            <span class="material-icons-outlined"> close </span>
+          </div>
+          <div class="birthday_content">
+            <a href="#"
+              ><p>
+                <strong>Md. Rokibul Hasan</strong> and <strong>Others</strong> 5
+                have birthday today
+              </p></a
+            >
+          </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Sponsor Section -->
+        <div class="sponsor_section">
+          <h4 class="sponsor_title">Sponsored</h4>
+          <div class="sponsor_box display_flex body_hover">
+            <div class="sponsor_img">
+              <img src="./image/sponsor-1.jpg" alt="" />
             </div>
-
-        </aside>
-
-        <div class="middle_section"></div>
-
-        <aside class="right_section">
-            <!-- Birthday Section -->
-            <div class="birthday_section">
-                <div class="birthday_header display_flex">
-                    <h4 class="display_flex">
-                        <img src="./image/birthday.png" alt=""> Birthdays
-                    </h4>
-                    <span class="material-icons-outlined">
-                        close
-                    </span>
-                </div>
-                <div class="birthday_content">
-                    <a href="#"><p><strong>Md. Rokibul Hasan</strong> and <strong>Others</strong> 5 have birthday today</p></a>
-                </div>
+            <div class="sponsor_text">
+              <h6>DevShop BD</h6>
+              <small>drvshopbd.com</small>
             </div>
-
-            <div class="separator"></div>
-
-            <!-- Sponsor Section -->
-            <div class="sponsor_section">
-                <h4 class="sponsor_title">Sponsored</h4>
-                <div class="sponsor_box display_flex body_hover">
-                    <div class="sponsor_img">
-                        <img src="./image/sponsor-1.jpg" alt="">
-                    </div>
-                    <div class="sponsor_text">
-                        <h6>DevShop BD</h6>
-                        <small>drvshopbd.com</small>
-                    </div>
-                </div>
-                <div class="sponsor_box display_flex body_hover">
-                    <div class="sponsor_img">
-                        <img src="./image/sponsor-2.jpg" alt="">
-                    </div>
-                    <div class="sponsor_text">
-                        <h6>Alibaba Shop</h6>
-                        <small>drvshopbd.com</small>
-                    </div>
-                </div>
+          </div>
+          <div class="sponsor_box display_flex body_hover">
+            <div class="sponsor_img">
+              <img src="./image/sponsor-2.jpg" alt="" />
             </div>
-
-            <div class="separator"></div>
-
-            <!-- Contact Section -->
-            <div class="contact_section">
-                <div class="contact_top display_flex">
-                    <h4 class="contact_title">Contacts</h4>
-                    <ul class="contact_ul display_flex">
-                        <li><a class="body_menu_btn" href="#"><span class="material-icons-outlined">
-                            video_call
-                          </span></a></li>
-                        <li><a class="body_menu_btn" href="#"><span class="material-icons-outlined">
-                            search
-                          </span></a></li>
-                        <li><a class="body_menu_btn" href="#"><span class="material-icons-outlined">
-                            more_horiz
-                          </span></a></li>
-                    </ul>
-                </div>
-
-                <!-- Active Contact Section -->
-                <div class="active_contacts">
-                    <ul>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-1.jpg" alt="">
-                            </div>
-                            Md. Rokibul Hasan
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-2.jpg" alt="">
-                            </div>
-                            Zahid Hossain
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-3.jpg" alt="">
-                            </div>
-                            Ashraf Faruqee Zaman
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-4.jpg" alt="">
-                            </div>
-                            Imran Hossain
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-5.jpg" alt="">
-                            </div>
-                           Yousuf Imran Rafayel
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-6.jpg" alt="">
-                            </div>
-                            Sharafat Shovon Shuvo
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-7.jpg" alt="">
-                            </div>
-                            Shahed Mahmud
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-8.jpg" alt="">
-                            </div>
-                            Mehedi H Mahmud
-                        </a></li>
-                        <li><a href="#">
-                            <div class="contact_img">
-                                <img src="./image/contact-9.jpg" alt="">
-                            </div>
-                            Parvez Bakh Rabaz
-                        </a></li>
-                    </ul>
-                </div>
-
-                <div class="separator"></div>
-
-                <!-- Group Section -->
-                <div class="group_section">
-                    <h4 class="group_title">Group conversations</h4>
-
-                    <div class="active_contacts">
-                        <ul>
-                            <li><a href="#">
-                                <div class="contact_img">
-                                    <img src="./image/group-1.png" alt="">
-                                </div>
-                                Coding Club Pro - Programming Community
-                            </a></li>
-                            <li><a href="#">
-                                <div class="contact_img">
-                                    <img src="./image/group-2.jpg" alt="">
-                                </div>
-                                SCIC - CODE4 DHAKA
-                            </a></li>
-                            <li><a href="#">
-                                <div class="contact_img">
-                                    <img src="./image/group-3.png" alt="">
-                                </div>
-                                Coding Club Pemium Group - Mission 2022
-                            </a></li>
-                            <li><a href="#">
-                                <div class="create_group">
-                                    <span class="material-icons-outlined">
-                                        add
-                                    </span>
-                                </div>
-                                Create new group
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-
+            <div class="sponsor_text">
+              <h6>Alibaba Shop</h6>
+              <small>drvshopbd.com</small>
             </div>
+          </div>
+        </div>
 
-        </aside>
+        <div class="separator"></div>
+
+        <!-- Contact Section -->
+        <div class="contact_section">
+          <div class="contact_top display_flex">
+            <h4 class="contact_title">Contacts</h4>
+            <ul class="contact_ul display_flex">
+              <li>
+                <a class="body_menu_btn" href="#"
+                  ><span class="material-icons-outlined"> video_call </span></a
+                >
+              </li>
+              <li>
+                <a class="body_menu_btn" href="#"
+                  ><span class="material-icons-outlined"> search </span></a
+                >
+              </li>
+              <li>
+                <a class="body_menu_btn" href="#"
+                  ><span class="material-icons-outlined"> more_horiz </span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Active Contact Section -->
+          <div class="active_contacts">
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-1.jpg" alt="" />
+                  </div>
+                  Md. Rokibul Hasan
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-2.jpg" alt="" />
+                  </div>
+                  Zahid Hossain
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-3.jpg" alt="" />
+                  </div>
+                  Ashraf Faruqee Zaman
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-4.jpg" alt="" />
+                  </div>
+                  Imran Hossain
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-5.jpg" alt="" />
+                  </div>
+                  Yousuf Imran Rafayel
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-6.jpg" alt="" />
+                  </div>
+                  Sharafat Shovon Shuvo
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-7.jpg" alt="" />
+                  </div>
+                  Shahed Mahmud
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-8.jpg" alt="" />
+                  </div>
+                  Mehedi H Mahmud
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="contact_img">
+                    <img src="./image/contact-9.jpg" alt="" />
+                  </div>
+                  Parvez Bakh Rabaz
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="separator"></div>
+
+          <!-- Group Section -->
+          <div class="group_section">
+            <h4 class="group_title">Group conversations</h4>
+
+            <div class="active_contacts">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="contact_img">
+                      <img src="./image/group-1.png" alt="" />
+                    </div>
+                    Coding Club Pro - Programming Community
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="contact_img">
+                      <img src="./image/group-2.jpg" alt="" />
+                    </div>
+                    SCIC - CODE4 DHAKA
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="contact_img">
+                      <img src="./image/group-3.png" alt="" />
+                    </div>
+                    Coding Club Pemium Group - Mission 2022
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="create_group">
+                      <span class="material-icons-outlined"> add </span>
+                    </div>
+                    Create new group
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
     </main>
     <!-- Main Section End -->
-
-</body>
+  </body>
 </html>
